@@ -1,0 +1,375 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22F2395A1CDC301F00DFAFC8 /* TOTARArchive.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 22F239591CDC301F00DFAFC8 /* TOTARArchive.h */; };
+		22F2395C1CDC301F00DFAFC8 /* TOTARArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F2395B1CDC301F00DFAFC8 /* TOTARArchive.m */; };
+		22F239641CDC32A900DFAFC8 /* TOTARArchiveItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F239631CDC32A900DFAFC8 /* TOTARArchiveItem.m */; };
+		22F239711CDC37FC00DFAFC8 /* TOTARArchiveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F239701CDC37FC00DFAFC8 /* TOTARArchiveTests.m */; };
+		22F239731CDC37FC00DFAFC8 /* libTOTARArchive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F239561CDC301E00DFAFC8 /* libTOTARArchive.a */; };
+		22F2397A1CDC383400DFAFC8 /* Test.tar in Resources */ = {isa = PBXBuildFile; fileRef = 22F239791CDC383400DFAFC8 /* Test.tar */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22F239741CDC37FC00DFAFC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22F2394E1CDC301E00DFAFC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22F239551CDC301E00DFAFC8;
+			remoteInfo = TOTARArchive;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		22F239541CDC301E00DFAFC8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				22F2395A1CDC301F00DFAFC8 /* TOTARArchive.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		22F239561CDC301E00DFAFC8 /* libTOTARArchive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTOTARArchive.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		22F239591CDC301F00DFAFC8 /* TOTARArchive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOTARArchive.h; sourceTree = "<group>"; };
+		22F2395B1CDC301F00DFAFC8 /* TOTARArchive.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOTARArchive.m; sourceTree = "<group>"; };
+		22F239621CDC32A900DFAFC8 /* TOTARArchiveItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOTARArchiveItem.h; sourceTree = "<group>"; };
+		22F239631CDC32A900DFAFC8 /* TOTARArchiveItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOTARArchiveItem.m; sourceTree = "<group>"; };
+		22F2396E1CDC37FC00DFAFC8 /* TOTARArchiveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TOTARArchiveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22F239701CDC37FC00DFAFC8 /* TOTARArchiveTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOTARArchiveTests.m; sourceTree = "<group>"; };
+		22F239721CDC37FC00DFAFC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22F239791CDC383400DFAFC8 /* Test.tar */ = {isa = PBXFileReference; lastKnownFileType = archive.tar; path = Test.tar; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22F239531CDC301E00DFAFC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22F2396B1CDC37FC00DFAFC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22F239731CDC37FC00DFAFC8 /* libTOTARArchive.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22F2394D1CDC301E00DFAFC8 = {
+			isa = PBXGroup;
+			children = (
+				22F239581CDC301F00DFAFC8 /* TOTARArchive */,
+				22F2396F1CDC37FC00DFAFC8 /* TOTARArchiveTests */,
+				22F239571CDC301E00DFAFC8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		22F239571CDC301E00DFAFC8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22F239561CDC301E00DFAFC8 /* libTOTARArchive.a */,
+				22F2396E1CDC37FC00DFAFC8 /* TOTARArchiveTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22F239581CDC301F00DFAFC8 /* TOTARArchive */ = {
+			isa = PBXGroup;
+			children = (
+				22F239591CDC301F00DFAFC8 /* TOTARArchive.h */,
+				22F2395B1CDC301F00DFAFC8 /* TOTARArchive.m */,
+				22F239621CDC32A900DFAFC8 /* TOTARArchiveItem.h */,
+				22F239631CDC32A900DFAFC8 /* TOTARArchiveItem.m */,
+			);
+			path = TOTARArchive;
+			sourceTree = "<group>";
+		};
+		22F2396F1CDC37FC00DFAFC8 /* TOTARArchiveTests */ = {
+			isa = PBXGroup;
+			children = (
+				22F239791CDC383400DFAFC8 /* Test.tar */,
+				22F239701CDC37FC00DFAFC8 /* TOTARArchiveTests.m */,
+				22F239721CDC37FC00DFAFC8 /* Info.plist */,
+			);
+			path = TOTARArchiveTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22F239551CDC301E00DFAFC8 /* TOTARArchive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22F2395F1CDC301F00DFAFC8 /* Build configuration list for PBXNativeTarget "TOTARArchive" */;
+			buildPhases = (
+				22F239521CDC301E00DFAFC8 /* Sources */,
+				22F239531CDC301E00DFAFC8 /* Frameworks */,
+				22F239541CDC301E00DFAFC8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TOTARArchive;
+			productName = TOTARArchive;
+			productReference = 22F239561CDC301E00DFAFC8 /* libTOTARArchive.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		22F2396D1CDC37FC00DFAFC8 /* TOTARArchiveTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22F239761CDC37FC00DFAFC8 /* Build configuration list for PBXNativeTarget "TOTARArchiveTests" */;
+			buildPhases = (
+				22F2396A1CDC37FC00DFAFC8 /* Sources */,
+				22F2396B1CDC37FC00DFAFC8 /* Frameworks */,
+				22F2396C1CDC37FC00DFAFC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22F239751CDC37FC00DFAFC8 /* PBXTargetDependency */,
+			);
+			name = TOTARArchiveTests;
+			productName = TOTARArchiveTests;
+			productReference = 22F2396E1CDC37FC00DFAFC8 /* TOTARArchiveTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22F2394E1CDC301E00DFAFC8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Tim Oliver";
+				TargetAttributes = {
+					22F239551CDC301E00DFAFC8 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					22F2396D1CDC37FC00DFAFC8 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 22F239511CDC301E00DFAFC8 /* Build configuration list for PBXProject "TOTARArchive" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 22F2394D1CDC301E00DFAFC8;
+			productRefGroup = 22F239571CDC301E00DFAFC8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22F239551CDC301E00DFAFC8 /* TOTARArchive */,
+				22F2396D1CDC37FC00DFAFC8 /* TOTARArchiveTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22F2396C1CDC37FC00DFAFC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22F2397A1CDC383400DFAFC8 /* Test.tar in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22F239521CDC301E00DFAFC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22F239641CDC32A900DFAFC8 /* TOTARArchiveItem.m in Sources */,
+				22F2395C1CDC301F00DFAFC8 /* TOTARArchive.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22F2396A1CDC37FC00DFAFC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22F239711CDC37FC00DFAFC8 /* TOTARArchiveTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22F239751CDC37FC00DFAFC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22F239551CDC301E00DFAFC8 /* TOTARArchive */;
+			targetProxy = 22F239741CDC37FC00DFAFC8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		22F2395D1CDC301F00DFAFC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		22F2395E1CDC301F00DFAFC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22F239601CDC301F00DFAFC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		22F239611CDC301F00DFAFC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		22F239771CDC37FC00DFAFC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TOTARArchiveTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.timoliver.TOTARArchiveTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		22F239781CDC37FC00DFAFC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TOTARArchiveTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.timoliver.TOTARArchiveTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22F239511CDC301E00DFAFC8 /* Build configuration list for PBXProject "TOTARArchive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22F2395D1CDC301F00DFAFC8 /* Debug */,
+				22F2395E1CDC301F00DFAFC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22F2395F1CDC301F00DFAFC8 /* Build configuration list for PBXNativeTarget "TOTARArchive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22F239601CDC301F00DFAFC8 /* Debug */,
+				22F239611CDC301F00DFAFC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		22F239761CDC37FC00DFAFC8 /* Build configuration list for PBXNativeTarget "TOTARArchiveTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22F239771CDC37FC00DFAFC8 /* Debug */,
+				22F239781CDC37FC00DFAFC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22F2394E1CDC301E00DFAFC8 /* Project object */;
+}
