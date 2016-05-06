@@ -9,6 +9,14 @@
 #import "TOTARArchive.h"
 #import "TOTARArchiveItem.h"
 
+// Format Definitions
+const NSInteger kTARBlockSize    = 512;
+const NSInteger kTARTypePosition = 156;
+const NSInteger kTARNamePosition = 0;
+const NSInteger kTARNameSize     = 100;
+const NSInteger kTARSizePosition = 124;
+const NSInteger kTARSizeSize     = 12;
+
 @interface TOTARArchive ()
 
 @property (nonatomic, strong, readwrite) NSURL *fileURL;
@@ -69,7 +77,7 @@
     // Loop through each entry in the file
     while (offset < self.data.length) {
         // Get the entire header block
-        NSData *entryHeader = [self.data subdataWithRange:NSMakeRange(offset, 512)];
+        NSData *entryHeader = [self.data subdataWithRange:NSMakeRange(offset, kTARBlockSize)];
         
         // Get the section of the header holding the file size and convert it
         NSData *fileSizeField = [entryHeader subdataWithRange:NSMakeRange(124, 12)];
@@ -77,20 +85,20 @@
         
         // Make sure the data block is padded out to 512 bytes
         NSInteger sizeWithPadding = fileSize;
-        if (sizeWithPadding % 512 != 0) {
-            sizeWithPadding += (512 - (sizeWithPadding % 512));
+        if (sizeWithPadding % kTARBlockSize != 0) {
+            sizeWithPadding += (kTARBlockSize - (sizeWithPadding % kTARBlockSize));
         }
         
-        // With the header and the size of the data block, we can work out the total size
-        NSInteger entrySize = 512 + sizeWithPadding;
-        NSData *entryDataBlock = [self.data subdataWithRange:NSMakeRange(offset, entrySize)];
+        // With the header and the size of the data block, we can work out the total size of this block
+        NSInteger entrySize = kTARBlockSize + sizeWithPadding;
         
-        // Get the name of the file
-        NSData *nameField = [entryHeader subdataWithRange:NSMakeRange(0, 100)];
+        //Get the type of the file to see if we need to expose it
+        NSData *fileTypeField = [entryHeader subdataWithRange:NSMakeRange(kTARTypePosition, 1)];
+        unsigned char *fileType = (unsigned char *)fileTypeField.bytes;
         
-        // If the name field is empty, skip it
-        if (*(int *)nameField.bytes != '\0') {
-            TOTARArchiveItem *item = [[TOTARArchiveItem alloc] initWithData:entryDataBlock];
+        if (*fileType == '0') {
+            NSData *entryBlock = [self.data subdataWithRange:NSMakeRange(offset, entrySize)];
+            TOTARArchiveItem *item = [[TOTARArchiveItem alloc] initWithData:entryBlock];
             [items addObject:item];
         }
         
